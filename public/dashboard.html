@@ -1,0 +1,49 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Documentación System - Dashboard de Capacitación</title>
+</head>
+<body>
+    <header>
+        <h1>Modulo de Capacitación</h1>
+    </header>
+    <div class="container">
+        <h2>Bienvenido, <span id="username"></span></h2>
+        <nav>
+            <h3>Menú de Capacitación</h3>
+            <ul class="horizontal-menu">
+                <li><button onclick="showModule('sap')">SAP</button></li>
+                <li><button onclick="showModule('cco')">CCO</button></li>
+                <li><button onclick="showModule('hr')">Recursos Humanos</button></li>
+                <li><button onclick="showModule('finanzas')">Finanzas</button></li>
+            </ul>
+        </nav>
+
+        <div id="moduleContent" class="centered-content">
+            <!-- Contenido de los módulos será mostrado aquí -->
+        </div>
+
+        <button onclick="logOut()">Cerrar Sesión</button>
+    </div>
+    
+    <!-- Modales para videos/documentos -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeVideoModal">&times;</span>
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                Tu navegador no soporta reproduccion de video.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nazly U. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

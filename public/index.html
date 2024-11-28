@@ -1,0 +1,53 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Documentación System</title>
+</head>
+<body>
+    <header>
+        <h1>Documentación System</h1>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div id="forms">
+                <h2>Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <input type="text" name="username" placeholder="Usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <div class="button-container">
+                    <button id="openRegisterModal">Registrarse</button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="./img/portada2.png" alt="Descripción de la imagen" />
+        </div>
+    </div>
+    
+    <!-- Modal para Registro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Registrarse</h2>
+            <form id="registerForm">
+                <input type="text" name="username" placeholder="Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="text" name="area" placeholder="Área" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nazly U. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

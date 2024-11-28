@@ -1,0 +1,119 @@
+/* public/estilo.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer esté al final de la página */
+}
+header, footer {
+    background: #167afd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.main-container {
+    display: flex; 
+    align-items: flex-start; 
+    margin: 20px;
+    flex-grow: 1; /* Para ocupar el espacio disponible */
+}
+.container, .image-container {
+    width: 50%; 
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ccc; /* Añadir borde visible */
+    margin-right: 20px; /* Espacio entre los contenedores */
+}
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.image-container img {
+    width: 100%; 
+    object-fit: cover; 
+}
+h1, h2 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background: #e01111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-container {
+    text-align: center; /* Centraliza el botón de registrar */
+    margin-top: 10px; /* Espacio entre los botones */
+}
+button:hover {
+    background: #f0ed40;
+}
+
+/* Estilos para el menú horizontal */
+.horizontal-menu {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Alinea los elementos fila */
+    justify-content: center; /* Centra los botones */
+}
+.horizontal-menu li {
+    margin: 0 10px; /* Espaciado entre botones */
+}
+
+/* Estilo para la sección centrada del contenido */
+.centered-content {
+    text-align: center; /* Centra elementos dentro de esta clase */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+   
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+   
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
